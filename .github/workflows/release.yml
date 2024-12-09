@@ -70,7 +70,7 @@ jobs:
           cargo build --release --target ${{ matrix.target }}
       - name: Get package name
         id: cargo-get
-        uses: nicolaiunrein/cargo-get@ec90d78dd6484403dc0777e55ef0266c38588d3d
+        uses: nicolaiunrein/cargo-get@47e673a38dd52ca4bdb69f23aab19885f50f961d
         with:
           subcommand: package.name
       - name: Rename binary
